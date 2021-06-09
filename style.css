@@ -1,0 +1,166 @@
+.form{
+  margin-top: 100px;
+  height: 550px;
+  width: 700px;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  border-style: outset;
+  border-width: 1px;
+  position: absolute;
+  border-radius: 10px;
+  left: 650px;
+}
+
+.table{
+  margin-top: 100px;
+  height: 50px;
+  width: 700px;
+  background-color: rgb(247, 228, 250);
+  position: absolute;
+  border-radius: 10px;
+  left: 400px;
+  text-align: center;
+}
+
+.form input{
+  height: 30px;
+  text-indent: 10px;
+  border-radius: 0px;
+  border: 10px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.form input[type="checkbox"] {
+  margin: .4rem;
+}
+.form input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(0, 116, 248);
+}
+.form input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.persona{
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  width: 250px;
+  margin-left: 25px;
+}
+.another{
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  width:76%;
+  margin-left: 26px;
+}
+.radio{
+  margin-left: 26px;
+}
+.another_mail{
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  width:76%;
+  margin-left: 55px;
+}
+.another_phone{
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  width:76%;
+  margin-left: 50px;
+}
+.label_style_first_holder{
+  margin-left: 50px;
+  margin-right: 50;
+}
+.label_radio{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.label_lang{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.label_style_first_holder_country{
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.label_test {
+  position: relative; /* to contain absolute elements */
+  padding-left:75px; /* free space for custom checkbox */
+  cursor: pointer;
+}
+/* hide default checkbox  */
+.label_test input[type=checkbox] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+    opactiy: 0;
+  width:0; 
+  height:0;
+}
+/* custom checkbox */
+.label_test span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:50px;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+.label_test span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* check icon */
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.label_test:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+.label_test input:checked ~ span {
+  background-color: #2eaadc;
+}
+.label_test input:checked ~ span:after {
+  display:block;
+}
+
+
+.button {
+  margin-bottom: 10px;
+}
+.button input[type="submit"] {
+  width:90%;
+  margin-left: 50px;
+  margin-right: 34px;
+  margin-top: 10px;
+  text-align: center;
+  background: rgb(0, 116, 248);
+  cursor: pointer;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.button input[type=submit]:hover {
+  background: #7161fd;
+}
+.showusers{
+  text-align: match-parent ;
+  margin-left: 10px;
+  position: absolute;
+  width: 300px;
+  background-color:rgb(136, 147, 253);
+  border-radius: 10px;
+  left: 100px;
+  transition: 3s;
+  top: 100px;
+}
+
