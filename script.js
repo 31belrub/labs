@@ -5,7 +5,6 @@ let inpEmail = document.getElementsByTagName("input")[3];
 let inpTel = document.getElementsByTagName("input")[4];
 let inpCountry = document.getElementsByTagName("select")[0];
 let inpCom = document.getElementsByTagName("input")[9];
-let shw = document.getElementsByClassName("showusers")[0];
 let languageE = document.getElementById('eng_lang');
 let languageR = document.getElementById('rus_lang');
 let agreed = document.getElementById('agr');
